@@ -17,6 +17,7 @@
                                             <th class="column-3">Price</th>
                                             <th class="column-4">Quantity</th>
                                             <th class="column-5">Total</th>
+                                            <th class="column-6">Delete</th>
                                         </tr>
 
 
@@ -49,6 +50,7 @@
                                                 </div>
                                             </td>
                                             <td class="column-5">$ {{$priceEnd}}</td>
+                                            <td class="column-6"><a href="/carts/delete/{{$product->id}}">Delete</a></td>
                                         </tr>
                                         @endforeach
 
