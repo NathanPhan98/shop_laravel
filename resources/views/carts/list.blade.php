@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
                         <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
                             <h4 class="mtext-109 cl2 p-b-30">
@@ -94,9 +94,41 @@
                                     </span>
                                 </div>
                             </div>
+                            <div class="flex-w flex-t bor12 p-t-15 p-b-30">
+                   
+    
+                                <div class="size-120 p-r-18 p-r-0-sm w-full-ssm">
 
+                                    <div class="p-t-15">
+                                        <span class="stext-112 cl8">
+                                            Thong tin khach hang
+                                        </span>
+
+                                        <div class="bor8 bg0 m-b-12">
+                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" required name="name" placeholder="Ten khach hang">
+                                        </div>
+
+                                        <div class="bor8 bg0 m-b-12">
+                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" required name="phone" placeholder="So dien thoai">
+                                        </div>
+
+                                        <div class="bor8 bg0 m-b-12">
+                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="address" placeholder="Dia chi giao hang">
+                                        </div>
+    
+                                        <div class="bor8 bg0 m-b-12">
+                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="email" placeholder="Email lien he">
+                                        </div>
+
+                                        <div class="bor8 bg0 m-b-12">
+                                            <textarea class="stext-111 cl8 plh3 size-111 p-lr-15" name="content" > </textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
-                                Proceed to Checkout
+                                Đặt Hàng
                             </button>
                         </div>
                     </div>
