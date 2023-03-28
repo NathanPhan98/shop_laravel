@@ -4,7 +4,10 @@
     <!-- Header desktop -->
     <div class="container-menu-desktop">
         <!-- Topbar -->
-
+        @php
+        if(is_null(Session::get('carts'))) { $productQuantity = 0; } 
+        else $productQuantity = count(Session::get('carts'));                 
+        @endphp
 
         <div class="wrap-menu-desktop">
             <nav class="limiter-menu-desktop container">
@@ -38,7 +41,7 @@
                     </div>
 
                     <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-                     data-notify="{{count(Session::get('carts'))}}">
+                     data-notify="{{$productQuantity}}">
                         <i class="zmdi zmdi-shopping-cart"></i>
                     </div>
                 </div>
@@ -60,7 +63,7 @@
             </div>
 
             <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
-             data-notify="{{count(\Session::get('carts'))}}">
+             data-notify="{{$productQuantity}}">
                 <i class="zmdi zmdi-shopping-cart"></i>
             </div>
 

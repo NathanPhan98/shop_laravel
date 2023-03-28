@@ -53,9 +53,6 @@
                                             <td class="column-6"><a href="/carts/delete/{{$product->id}}">Delete</a></td>
                                         </tr>
                                         @endforeach
-
-
-
                                     </tbody>
                                 </table>
 
@@ -84,11 +81,6 @@
                             <h4 class="mtext-109 cl2 p-b-30">
                                 Cart Totals
                             </h4>
-
-
-
-                     
-
                             <div class="flex-w flex-t p-t-27 p-b-33">
                                 <div class="size-208">
                                     <span class="mtext-101 cl2">
