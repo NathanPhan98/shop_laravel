@@ -2,6 +2,7 @@
 
 namespace App\Http\Services;
 
+use App\Jobs\SendMail;
 use App\Models\Cart;
 use App\Models\Customer;
 use App\Models\Product;
@@ -85,8 +86,10 @@ class CartService {
             DB::commit(); // không lỗi thì commit 
             Session::flash('success','Dat hang thanh cong'); 
             
-            
-            
+            #Queue
+            SendMail::dispatch($request->input('email'))->delay(now()->addSecond(3));
+            // Sau ghi dac hang thanh cong thi 3s sau moi gui mail 
+
             Session::forget('carts'); // xong thì xóa session 
             
         } catch (\Exception $err){
