@@ -1,6 +1,8 @@
 @extends('main')
 
 @section('content')
+
+    @include('admin.alert')
     @if (count($products) != 0)
         <form class="bg0 p-t-75 p-b-85 m-t-80" method="POST">
             <div class="container">
